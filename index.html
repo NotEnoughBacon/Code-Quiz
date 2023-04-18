@@ -10,38 +10,50 @@
 </head>
 <body>
     <header class="header">
-        <button id="highscores">Highscores</button>
         <h1>JavaScript Code Quiz!</h1>
     </header>
     <main>
-        <section class="timer">
+        <section id="timerBox" class="timer">
             <h2>Time Left: <span id="timer">60</span></h2>
         </section>
-        <section class="howToPlay">
+        <section class="howToPlay" id="howToPlay">
             <h4>Today you will be showing off how much you have learned in JavaScript. You will take a timed test with 1 minute to complete it. If you get a question wrong 10 seconds will be subracted off your timer. You will get a score at the end showing how well you did. Press start to begin playing!</h4>
         </section>
         <section class="startButton">
             <button id="startBtn">Start</button>
         </section>
-        <section class="questionSection">
+        <section>
+            <div id="correct"></div>
+        </section>
+        <section class="questionSection" id="questionSection">
             <div class="question">
-                <h4 id="questionText">Placeholder</h4>
+                <h4 id="questionText"></h4>
             </div>
-            <div>
+            <div id="answersSection">
                 <div class="question">
-                    <button id="answerA">Placeholder</button>
+                    <button id="answerA"></button>
                 </div>
                 <div class="question">
-                    <button id="answerB">Placeholder</button>
+                    <button id="answerB"></button>
                 </div>
                 <div class="question">
-                    <button id="answerC">Placeholder</button>
+                    <button id="answerC"></button>
                 </div>
                 <div class="question">
-                    <button id="answerD">Placeholder</button>
+                    <button id="answerD"></button>
                 </div>
             </div>
         </section>
+        <div id="inputBox" class="inputBox">
+            <div id="highScore">
+                
+            </div>
+            <label for="email">   Initials:</label>
+            <input type="text" id="initials" name="initials" placeholder="Enter your initials">
+            <button id="submitScore">Submit Score</button>
+            <button id="home" >Home</button>
+        </div>
     </main>
 </body>
+<script src="./javascript.js"></script>
 </html>
